@@ -7,7 +7,13 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = "*"
+fastapi = {version = "*", extras = ["standard"]}
+psycopg2-binary = "*"
+alembic = "*"
+databases = "*"
+pydantic = "*"
+pydantic-settings = "*"
+pyjwt = "*"
 
 
 [build-system]
